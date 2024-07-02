@@ -1,6 +1,94 @@
 .App {
-  text-align: center;
+  align-items: center;
+  border-style:solid;
+  border-color:darkslategray;
+  border-width: 5px;
+  border-radius:10px;
+  width: 500px;
+  height: 500px;
+  background-color:rgb(244, 249, 253);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
+.Tx-list {
+  align-items: center;
+  border-style:solid;
+  border-color:darkslategray;
+  border-width: 5px;
+  border-radius:10px;
+  width: 500px;
+  height:auto;
+  background-color:rgb(244, 249, 253);
+  position:fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.Block {
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  border-style: dashed;
+  border-color:darkslategray;
+  border-width: 3px;
+  border-radius:8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.Block-link {
+  color: darkcyan;
+}
+
+.Block-button {
+  border-color: darkslategray;
+  border-width: 2px;
+  border-radius: 2px;
+  width: 110px;
+  height: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+}
+
+.Block-label {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+} 
+
+.Return {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+  padding: 4px;
+} 
+
+.Block-info {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 500;
+  color: darkslateblue;
+} 
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +114,34 @@
 
 .App-link {
   color: #61dafb;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover {
+  color:darkturquoise;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+}
+
+.Scrollable-list {
+  max-height: 500px;
+  overflow-y: scroll;  /* Add vertical scroll bar when content exceeds the height */
+  /* padding: 10px; Optional: Add padding */
+  margin: 5px;
+  list-style-type: none; /* Optional: Remove default list style */
+}
+
+.Scrollable-list li {
+  padding: 5px 0; /* Optional: Add padding to list items */
 }
 
 @keyframes App-logo-spin {
